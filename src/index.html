@@ -2,17 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="widt=device-width, initial-scale=1">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Creacion del encabezado fijo -->
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a><img class="img-logo" src="../img/logo.png"></a>
+            <span class="menu-icon" id="id-menu-button">Ver menú</span>
+            <nav class="navigation">
+                <ul id="id-menu-show">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">CAMPEONES</a></li>
+                    <li><a href="#">ESTADISTICA</a></li>
+                    <li><a href="#">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Creacion del fondo de pantalla -->
+    </header>
+    <main class="main">
+        <video id ="video" loop autoplay preload muted>
+                <source src="../img/neko.webm" type="video/webm" ; codecs="vp8,vorbis"'>
+        </video>
+    </main>
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2018 | Giuliana y Cinthia </p>
+        </div>
+    </footer>
   </body>
 </html>
