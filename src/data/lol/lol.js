@@ -1,4 +1,4 @@
-var LOL = {
+var dataLol = {
   type: "champion",
   format: "standAloneComplex",
   version: "6.24.1",
@@ -1309,6 +1309,7 @@ Evelynn: {
   key: "28",
   name: "Evelynn",
   title: "the Widowmaker",
+  img:"https://www.masterypoints.com/assets/img/lol/champion_icons/Ahri.png",
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
   blurb:
@@ -3024,7 +3025,7 @@ Leblanc: {
   key: "7",
   name: "LeBlanc",
   title: "the Deceiver",
-  "name:":
+  img:
   "https://www.masterypoints.com/assets/img/lol/champion_icons/Leblanc.png",
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",

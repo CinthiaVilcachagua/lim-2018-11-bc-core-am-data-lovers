@@ -11,11 +11,11 @@
     <header class="header">
         <div class="container logo-nav-container">
             <a><img class="img-logo" src="../img/logo.png"></a>
-            <span class="menu-icon" id="id-menu-button">Ver menú</span>
+            <span class="menu-icon" id="id-menuButton">Ver menú</span>
             <nav class="navigation">
-                <ul id="id-menu-show">
+                <ul id="id-menuShow">
                     <li><a href="#">INICIO</a></li>
-                    <li><a href="#">CAMPEONES</a></li>
+                    <li><a type="button" id="id-championsButton" href="#newRoot2">CAMPEONES</a></li>
                     <li><a href="#">ESTADISTICA</a></li>
                     <li><a href="#">CONTACTANOS</a></li>
                 </ul>
@@ -25,13 +25,21 @@
     </header>
     <main class="main">
         <video id ="video" loop autoplay preload muted>
-                <source src="../img/neko.webm" type="video/webm" ; codecs="vp8,vorbis"'>
+                <source src="../img/neko.webm" type="video/webm" ; codecs="vp8,vorbis">
         </video>
     </main>
-    <div id="root"></div>
+    <!-- Creacion de la presentacion -->
+    <div id="newRoot" class="newRoot"></div>
+    <div id="newRoot2" class="newRoot2"></div>
+    <!-- Creacion de contenedor de campeones -->
+    <div id="createTitle"></div>
+    <div id="container-champions" class="container-champions">
+        <ul id="container-list" class="container-list"></ul>
+    </div>
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    
     <footer class="footer">
         <div class="container">
             <p>Copyright © 2018 | Giuliana y Cinthia </p>

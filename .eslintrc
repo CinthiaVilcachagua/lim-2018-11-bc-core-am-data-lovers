@@ -29,14 +29,15 @@
     "spaced-comment": 1,
     "quotes": [1, "single"],
     "id-length": [1, { "exceptions": ["i", "j", "x"] }],
-    "indent": [1, 2],
+    "indent": 2,
     "no-array-constructor": 1,
     "no-const-assign": "error",
     "no-var": "error"
  },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false
+    "lol": false,
+    "dataLol": false
   }
-  
+
 }
