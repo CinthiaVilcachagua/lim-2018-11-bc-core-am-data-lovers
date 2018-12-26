@@ -12,13 +12,13 @@ menuBtn.addEventListener('click', loadMenu);
 const championsBtn = document.getElementById('id-championsButton');
 
 const loadChampions = () => {
-    const containerTitle = document.getElementById('createTitle');
+    const containerTitle = document.getElementById('id-createTitle');
     const createTitle = `
         <div class="createTitle">CAMPEONES</div>
     `;
     containerTitle.innerHTML = createTitle;
     const champions = Object.values(dataLol.data);
-    const containerList = document.getElementById('container-list');
+    const containerList = document.getElementById('id-containerList');
     const createTemplate = (data) => {
         let listChampions = '';
         data.forEach((champions) => {
