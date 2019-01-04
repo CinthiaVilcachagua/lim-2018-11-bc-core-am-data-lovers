@@ -158,4 +158,9 @@ describe('lol', () => {
             expect(window.lol.getChampions(input)).toEqual(output);
         });
     });
+    describe('lol.filterRoleChampions', () => {
+        it('deberia de ser una funcion', () => {
+            expect(typeof window.lol.filterRoleChampions).toBe('function');
+        });
+    });
 });

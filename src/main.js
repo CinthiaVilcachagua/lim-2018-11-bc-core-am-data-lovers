@@ -1,5 +1,7 @@
 const menuBtn = document.getElementById('id-menuButton');
 const menuShow = document.getElementById('id-menuShow');
+const championsBtn = document.getElementById('id-championsButton');
+// Cargar menú desplegable
 const loadMenu = () => {
     if (menuShow.className === 'show') {
         menuShow.className = '';
@@ -8,10 +10,8 @@ const loadMenu = () => {
     }
 };
 menuBtn.addEventListener('click', loadMenu);
-
-const championsBtn = document.getElementById('id-championsButton');
-
-const loadChampions = () => {
+// Cargar campeones
+const loadChampions = () => {   
     const containerTitle = document.getElementById('id-createTitle');
     const createTitle = `
         <div class="createTitle">CAMPEONES</div>

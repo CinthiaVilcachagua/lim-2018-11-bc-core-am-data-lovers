@@ -5,6 +5,10 @@ const getChampions = (jsonChampions) => {
     }
     return newarray;
 };
+const filterRoleChampions = () => {
+
+};
 window.lol = {
     getChampions,
+    filterRoleChampions,
 };

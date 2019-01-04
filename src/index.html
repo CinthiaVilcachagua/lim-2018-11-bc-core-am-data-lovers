@@ -15,8 +15,8 @@
             <nav class="navigation">
                 <ul id="id-menuShow">
                     <li><a href="#id-main" type="button">INICIO</a></li>
-                    <li><a href="#id-auxiliary" type="button" id="id-championsButton" >CAMPEONES</a></li>
-                    <li><a href="#">ESTADISTICA</a></li>
+                    <li><a href="#id-auxiliary" type="button" id="id-championsButton">CAMPEONES</a></li>
+                    <li><a href="#id-containerFilters">FILTROS</a></li>
                     <li><a href="#">CONTACTANOS</a></li>
                 </ul>
             </nav>
@@ -35,6 +35,32 @@
     <div id="id-createTitle"></div>
     <div id="id-containerChampions" class="container-champions">
         <ul id="id-containerList" class="container-list"></ul>
+    </div>
+    <!-- Creacion de filtros -->
+    <div id = "id-containerFilters" class="container-filters">
+		<div class="wrapper-filters">
+			<div class="title-filters">
+				<h3>FILTROS CAMPEONES</h3>
+			</div>
+			<div class="filters">
+				<div class="submit-btn">
+					<p>Por roles</p>
+					<select id="id-selectRole" class="selectRole">
+						<option>Asesinos</option>
+						<option>Luchadores</option>
+						<option>Magos</option>
+						<option>Tiradores</option>
+						<option>Apoyos</option>
+						<option>Tanques</option>
+					</select>
+					<p>Por orden</p>
+					<select id="id-selectOrder" class="selectRole">
+						<option>Ascendente</option>
+						<option>Descendente</option>
+					</select>
+                </div>
+			</div>
+		</div>
     </div>
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>

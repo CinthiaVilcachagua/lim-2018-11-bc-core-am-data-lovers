@@ -1,3 +1,4 @@
+
 body{
 	margin: 0;
 	background-color: #0a0a0c;
@@ -62,7 +63,6 @@ body{
 	padding: 5px 0;
 	text-align: center;
 	margin-top: 5px;
-	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -147,7 +147,32 @@ body{
 	display: block;
 	margin: auto;
   }
-
+  .container-filters{
+	max-width: 300px;
+	margin-right: auto;
+	margin : 20px;
+	padding: 10px;
+	background: #0a0a0c;
+  }
+  .title-filters{
+   background: #937341;
+   padding: 10px;
+   text-align: center;
+   border-top-right-radius: 25px;
+   border-top-left-radius: 25px;
+  }
+  .filters{
+	padding: 10px;
+	background: white;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius:20px;
+  }
+  .selectRole{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #937341;
+	border-radius: 25px;
+  }
 @media only screen and (max-width: 767px){
 	.menu-icon{
 		background-image: url(../img/btn-menu.png);
@@ -193,4 +218,7 @@ body{
 	.container-auxiliary{
 		display: none;
 	}
+	.container-filters{
+		width: 100%;
+	  }
 }
