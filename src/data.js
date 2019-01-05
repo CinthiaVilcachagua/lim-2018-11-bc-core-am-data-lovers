@@ -5,8 +5,12 @@ const getChampions = (jsonChampions) => {
     }
     return newarray;
 };
-const filterRoleChampions = () => {
-
+const filterRoleChampions = (jsonChampions, filter) => {
+    const arrayFilter = jsonChampions.filter((champion) => {
+        const propiedad = champion.tags;
+        return propiedad[0] === filter || propiedad[1] === filter;
+    });
+    return arrayFilter;
 };
 window.lol = {
     getChampions,

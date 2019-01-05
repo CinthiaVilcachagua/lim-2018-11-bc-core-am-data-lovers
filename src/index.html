@@ -6,7 +6,7 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="id-body">
     <!-- Creacion del encabezado fijo -->
     <header class="header">
         <div class="container logo-nav-container">
@@ -14,9 +14,9 @@
             <span id="id-menuButton" class="menu-icon"></span>
             <nav class="navigation">
                 <ul id="id-menuShow">
-                    <li><a href="#id-main" type="button">INICIO</a></li>
+                    <li><a href="#id-main" type="button" id="id-mainButton">INICIO</a></li>
                     <li><a href="#id-auxiliary" type="button" id="id-championsButton">CAMPEONES</a></li>
-                    <li><a href="#id-containerFilters">FILTROS</a></li>
+                    <li><a href="#id-auxiliary" type="button" id="id-championsFilter">FILTROS</a></li>
                     <li><a href="#">CONTACTANOS</a></li>
                 </ul>
             </nav>
@@ -32,44 +32,47 @@
     <div id="id-welcome" class="container-welcome"></div>
     <div id="id-auxiliary" class="container-auxiliary"></div>
     <!-- Creacion de contenedor de campeones -->
-    <div id="id-createTitle"></div>
+    <div id="id-createTitle" class="create-Title"></div>
     <div id="id-containerChampions" class="container-champions">
         <ul id="id-containerList" class="container-list"></ul>
     </div>
     <!-- Creacion de filtros -->
-    <div id = "id-containerFilters" class="container-filters">
-		<div class="wrapper-filters">
-			<div class="title-filters">
-				<h3>FILTROS CAMPEONES</h3>
-			</div>
-			<div class="filters">
-				<div class="submit-btn">
-					<p>Por roles</p>
-					<select id="id-selectRole" class="selectRole">
-						<option>Asesinos</option>
-						<option>Luchadores</option>
-						<option>Magos</option>
-						<option>Tiradores</option>
-						<option>Apoyos</option>
-						<option>Tanques</option>
-					</select>
-					<p>Por orden</p>
-					<select id="id-selectOrder" class="selectRole">
-						<option>Ascendente</option>
-						<option>Descendente</option>
-					</select>
+    <div id="id-mainFilter" class="main-filter">
+        <div id="id-createTitle" class="create-Title"></div>
+        <div id = "id-containerFilters" class="container-filters">
+                <div class="wrapper-filters">
+                    <div class="title-filters">
+                        <h3>FILTROS CAMPEONES</h3>
+                    </div>
+                    <div class="filters">
+                        <div class="submit-btn">
+                            <p>Por roles</p>
+                            <select id="id-selectRole" class="selectRole" onchange="filterOfRole()">
+                                <option value= "Assassin">Asesinos</option>
+                                <option value="Fighter" selected="selected">Luchadores</option>
+                                <option value="Mage">Magos</option>
+                                <option value="Marksman">Tiradores</option>
+                                <option value="Support">Apoyos</option>
+                                <option value="Tank">Tanques</option>
+                            </select>
+                            <p>Por orden</p>
+                            <select id="id-selectOrder" class="selectRole">
+                                <option>Ascendente</option>
+                                <option>Descendente</option>
+                            </select> 
+                            <p id="imprimir"></p>
+                        </div>
+                    </div>
                 </div>
-			</div>
-		</div>
+        </div>
+    
+        <div id="id-containerRole" class="container-role">
+                <ul id="id-listRole" class="list-role"></ul>
+        </div>
     </div>
+    <!-- Creacion de pie de pagina -->
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
-    
-    <footer class="footer">
-        <div class="container">
-            <p>Copyright © 2018 | Giuliana y Cinthia </p>
-        </div>
-    </footer>
   </body>
 </html>
