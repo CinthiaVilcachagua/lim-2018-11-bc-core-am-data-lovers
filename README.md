@@ -198,7 +198,7 @@ _procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
 Para ello te recomendamos implementar las siguientes funciones en el archivo
 `src/data.js`:
 
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
+* `filterData(data, condition)`: esta función `condition` o filtrar recibiría la
   data, y nos retornaría aquellos datos que sí cumplan con la condición.
 
 * `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
@@ -500,7 +500,7 @@ compañera:
 * [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
 * [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
 * [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
+* [Array.condition en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/condition)
 * [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
 * [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
 * [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)

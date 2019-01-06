@@ -12,53 +12,64 @@ const loadMenu = () => {
     }
 };
 menuBtn.addEventListener('click', loadMenu);
-// Cargar campeones
-const loadChampions = () => {   
-    document.getElementById('id-createTitle').style.display = 'block';
-    document.getElementById('id-containerChampions').style.display = 'block';
-    const containerTitle = document.getElementById('id-createTitle');
-    const createTitle = `
-        <div class="Title">CAMPEONES</div>
-    `;
-    containerTitle.innerHTML = createTitle;
-    const jsonChampions = Object.values(dataLol.data);
-    const containerList = document.getElementById('id-containerList');
-    const createTemplate = (data) => {
-        let listChampions = '';
-        data.forEach((jsonChampions) => {
-            const cardChampions = `
-                <li class="list-champions">
-                    <div class="champion-name">${ jsonChampions.name}</div>
-                    <div class="champion-img"><img class= "post-image" src="${ jsonChampions.img}"/></div>
-                </li>
-          `;
-            listChampions += cardChampions;
-        });
-        containerList.innerHTML = listChampions;
-    };
-    createTemplate(jsonChampions);
-};
-championsBtn.addEventListener('click', loadChampions); 
-// Filtrar por roles
+// Cargar Inicio
 const loadMain = () => {
     document.getElementById('id-createTitle').style.display = 'none';
     document.getElementById('id-containerChampions').style.display = 'none';
     document.getElementById('id-mainFilter').style.display = 'none';
 };
 mainBtn.addEventListener('click', loadMain);
+// Cargar campeones
+const loadChampions = () => {
+    document.getElementById('id-createTitle').style.display = 'block';
+    document.getElementById('id-containerChampions').style.display = 'block';
+    document.getElementById('id-mainFilter').style.display = 'none';
+    const containerTitle = document.getElementById('id-createTitle');
+    const createTitle = `
+        <div class="Title">CAMPEONES</div>
+    `;
+    containerTitle.innerHTML = createTitle;
+    const data = Object.values(dataLol.data);
+    const containerList = document.getElementById('id-containerList');
+    const createTemplate = (data) => {
+        let listChampions = '';
+        data.forEach((data) => {
+            const cardChampions = `
+                <li class="list-champions">
+                    <div class="champion-name">${ data.name}</div>
+                    <div class="champion-img"><img class= "post-image" src="${ data.img}"/></div>
+                </li>
+          `;
+            listChampions += cardChampions;
+        });
+        containerList.innerHTML = listChampions;
+    };
+    createTemplate(data);
+};
+championsBtn.addEventListener('click', loadChampions);
+// Filtrar por roles
 const filterOfRole = () => {
     document.getElementById('id-mainFilter').style.display = 'block';
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-containerChampions').style.display = 'none';
     const selectRole = document.getElementById('id-selectRole');
     const roleValue = selectRole.options[selectRole.selectedIndex].value;
-    const jsonChampions = Object.values(dataLol.data);
+    const data = Object.values(dataLol.data);
     const filter = roleValue;
-    const newArrayOfRole = lol.filterRoleChampions(jsonChampions, filter);
-    const containerTitle = document.getElementById('id-createTitle');
+    let newArrayOfRole = lol.filterData(data, filter);
+    // Ordenar data
+    const sortBy = 'name';
+    let sortOrder;
+    if (document.getElementById('r1').checked)
+        sortOrder = document.getElementById('r1').value;
+    else
+        sortOrder = document.getElementById('r2').value;
+    newArrayOfRole = lol.sortData(newArrayOfRole, sortBy, sortOrder);
+    // Creacion de template
+    const containerTitle = document.getElementById('id-createTitleRole');
     const createTitle = `
         <div class="createTitle">FILTROS</div>
-    `;
+        `;
     containerTitle.innerHTML = createTitle;
     const containerList = document.getElementById('id-listRole');
     const createTemplate = (data) => {
@@ -77,3 +88,8 @@ const filterOfRole = () => {
     createTemplate(newArrayOfRole);
 };
 filterBtn.addEventListener('click', filterOfRole);
+let radioButtons = document.getElementsByName('radio-name');
+for (let iIndex in radioButtons) {
+    let iRadio = radioButtons[iIndex];
+    iRadio.addEventListener('click', filterOfRole);
+}

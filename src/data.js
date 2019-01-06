@@ -1,18 +1,23 @@
-const getChampions = (jsonChampions) => {
-    let newarray = [];
-    for (let i = 0; i < jsonChampions.length; i++) {
-        newarray.push({ name: jsonChampions[i].name, img: jsonChampions[i].img });
-    }
-    return newarray;
-};
-const filterRoleChampions = (jsonChampions, filter) => {
-    const arrayFilter = jsonChampions.filter((champion) => {
+const filterData = (data, filter) => {
+    const arrayFilter = data.filter((champion) => {
         const propiedad = champion.tags;
         return propiedad[0] === filter || propiedad[1] === filter;
     });
     return arrayFilter;
 };
+const sortData = (data, sortBy, sortOrder) => {
+    const arrayOrder = data.sort(function(prmA, prmB) {
+        if (prmA[sortBy] > prmB[sortBy]) {
+            return 1 * sortOrder;
+        }
+        if (prmA[sortBy] < prmB[sortBy]) {
+            return -1 * sortOrder;
+        }
+        return 0;
+    });
+    return arrayOrder;
+};
 window.lol = {
-    getChampions,
-    filterRoleChampions,
+    filterData,
+    sortData,
 };

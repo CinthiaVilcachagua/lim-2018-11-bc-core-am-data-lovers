@@ -37,8 +37,8 @@
         <ul id="id-containerList" class="container-list"></ul>
     </div>
     <!-- Creacion de filtros -->
-    <div id="id-mainFilter" class="main-filter">
-        <div id="id-createTitle" class="create-Title"></div>
+    <div id="id-mainFilter" class="main-condition">
+        <div id="id-createTitleRole" class="create-Title"></div>
         <div id = "id-containerFilters" class="container-filters">
                 <div class="wrapper-filters">
                     <div class="title-filters">
@@ -47,7 +47,7 @@
                     <div class="filters">
                         <div class="submit-btn">
                             <p>Por roles</p>
-                            <select id="id-selectRole" class="selectRole" onchange="filterOfRole()">
+                            <select id="id-selectRole" class="select-Role" onchange="filterOfRole()">
                                 <option value= "Assassin">Asesinos</option>
                                 <option value="Fighter" selected="selected">Luchadores</option>
                                 <option value="Mage">Magos</option>
@@ -56,11 +56,10 @@
                                 <option value="Tank">Tanques</option>
                             </select>
                             <p>Por orden</p>
-                            <select id="id-selectOrder" class="selectRole">
-                                <option>Ascendente</option>
-                                <option>Descendente</option>
-                            </select> 
-                            <p id="imprimir"></p>
+                            <div id="id-radioOrder" class="radio-Role">
+                                <input type="radio" id="r1" name="radio-name" value="1" checked>Asc<br>
+                                <input type="radio" id="r2" name="radio-name" value="-1">Desc<br>
+                            </div>
                         </div>
                     </div>
                 </div>

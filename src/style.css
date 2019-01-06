@@ -174,8 +174,14 @@ body{
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius:20px;
   }
-  .selectRole{
-	width: 100%;
+  .select-Role{
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #937341;
+	border-radius: 25px;
+  }
+  .radio-Role{
+	width: 90%;
 	padding: 10px;
 	border: 1px solid #937341;
 	border-radius: 25px;
