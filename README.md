@@ -1,5 +1,15 @@
 # Data Lovers - LOL(League of Legends)
 ***
+## Índice
+
+* [Proyecto](#proyecto)
+* [Descripción del Juego](#temática-Elegida)
+* [Usuarios](#principales-usuarios)
+* [Objetivos](#objetivos-del-usuario)
+* [Historias de Usuario](#historias-de-usuario)
+* [Uso del producto](#¿Cuándo-se-utilizaría-el-producto?)
+* [La Solución](#solución-al-problema)
+
 
 ## Proyecto
 
@@ -7,7 +17,7 @@ El presente proyecto es el segundo a realizar en el Bootcamp 2018-2, y está bas
 En el mundo de la web es muy común el uso de data. De hecho, wikipedia nos dice que un dashboard puede ser un resumen gráfico de varias piezas de información importante, generalmente utilizadas para dar una visión general de una empresa o de un servicio.
 Además, este proyecto se debe "resolver" en parejas, por lo que un objetivo importante es ganar experiencia en trabajos colaborativos con entrega grupal.
 
-## Temática Elegida - LOL
+## Temática Elegida
 
 [League of Legends] (https://lan.leagueoflegends.com/es/game-info/get-started/what-is-lol/) (también conocido por sus siglas LoL) es un videojuego del juego de género multiplayer online battle arena (MOBA) y deporte electrónico desarrollado por Riot Games para Microsoft Windows y OS X.
 
@@ -15,7 +25,7 @@ Fue diseñado para el sistema operativo Microsoft Windows y lanzaron una beta pa
 
 **El juego está inspirado en un popular mapa personalizado del Warcraft III**, Defense of the Ancients: Allstars diseñado por Steve «Guinsoo» Feak el cual a su vez está basado en el escenario de StarCraft «Aeon of Strife».
 
-<img src= "src/img/logo.png" alt="Imágen del logo" style="max-width:80%">
+<img src= "img/logo.png" alt="Imágen del logo" style="max-width:80%">
 
 ## Principales Usuarios
 
@@ -34,11 +44,11 @@ Se realizaron **encuestas online** a los usuarios involucrados en videojuegos, c
 Para la encuesta, se preparó una lista de preguntas, y a su vez se diseñó 1 prototipo básico, adaptándolo siempre a las necesidades del usuario.
 Algunas de las preguntas generales que hicimos:
 
-<img src= "src/img/Estadística1.png" alt="Estadistica1" style="max-width:80%">
+<img src= "img/Estadística1.png" alt="Estadistica1" style="max-width:80%">
 
-<img src= "src/img/Estadística2.png" alt="Estadistica2" style="max-width:80%">
+<img src= "img/Estadística2.png" alt="Estadistica2" style="max-width:80%">
 
-<img src= "src/img/Estadística3.png" alt="Estadistica3" style="max-width:80%">
+<img src= "img/Estadística3.png" alt="Estadistica3" style="max-width:80%">
 
 
 ### Historias de Usuario generadas
@@ -61,11 +71,11 @@ Después de conocer a los principales usuarios y entender sus necesidades, se ll
 
 1) Tareas compartidas y organización mediante Trello.
 
-<img src= "src/img/Trello.png" alt="Imagen de la organización" style="max-width:80%">
+<img src= "simg/Trello.png" alt="Imagen de la organización" style="max-width:80%">
 
 2) Sketch de la solución (prototipo de baja fidelidad).
 
-<img src= "src/img/prototipado.jpg" alt="Imagen del prototipado" style="max-width:80%">
+<img src= "img/prototipado.jpg" alt="Imagen del prototipado" style="max-width:80%">
 
 
 3) Resultados del primer Sprint
@@ -73,7 +83,12 @@ Después de conocer a los principales usuarios y entender sus necesidades, se ll
 -Fondo de pantalla (video interactivo).
 -Manejo pequeño de Responsive.
 
-<img src= "src/img/Semana1.png" alt="Imagen del resultado 1semana" style="max-width:80%">
+<img src= "img/Semana1.png" alt="Imagen del resultado 1semana" style="max-width:80%">
+
+#### Testeos de usabilidad
+- Al usuario le gusto mucho el fondo en movimiento, pero le gustaria que los campeones se muestren mas ordenados.
+- Al usuario le encantaria que tenga una mejor visibilidad en cualquiera de sus dispositivos.
+- Al usurario le gustaria ver el menu con letra mas grande.
 
 ### *SEGUNDO SPRINT*
 
@@ -81,21 +96,26 @@ Trabajamos en la primera historia de Usuario: Yo como usuario quiero ver los cam
 Se inició con un manejo del Responsive básico.
 Trabajamos un segundo prototipado de baja fidelidad.
 
-<img src= "src/img/Semana2.png" alt="Imagen del resultado final" style="max-width:80%">
+<img src= "img/Semana2.png" alt="Imagen del resultado final" style="max-width:80%">
+
+#### Testeos de usabilidad
+- Al usuario le gusto la manera ordenada en que se muestra a los campeones y la fácil visibilidad. Le gustaria si se pudiese mostrar un poquito mas grande y su nombre también mas grande.
+- Al usuario le gustaria poder observar más caractarísticas de su campeon favorito.
+- Al usuario le gustaria poder clasificar a sus campeones.
 
 ### *TERCER SPRINT*
 
 Trabajamos la segunda historia de Usuario: Yo como usuario quiero poder filtrar a los campeones según su Rol (ordenándolos según orden ascendente y descendente).
 Se trabajó en una estadística de ataque según el grupo de campeones por Rol. (promedios).
 
-<img src= "src/img/Semana3.png" alt="Imagen del resultado final" style="max-width:80%">
+<img src= "img/Semana3.png" alt="Imagen del resultado final" style="max-width:80%">
 
 #### Testeos de usabilidad
+- Al usuario le gusto mucho poder filtrar a sus campeones segun sus roles y la manera ordenada en la que se presentaba.
+- Al usuario le gusto mucho poder ver la estadística de los ataques según rol, pero le gustaría saber el ataque de cada uno.
+- Al usuario le gustaria poder observar un top de los que tiene mas dificultad y ataque.
 
 ### COLABORADORAS:
-
-1.	Giuliana Mendoza Suma.
-2.	Cinthia Vilcachagua Ccorimanya.
 
 1.	Giuliana Mendoza Suma.
 2.	Cinthia Vilcachagua Ccorimanya.
