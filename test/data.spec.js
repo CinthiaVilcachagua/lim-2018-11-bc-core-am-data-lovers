@@ -459,7 +459,7 @@ const inputOrder = [
             attackspeedoffset: 0.02,
             attackspeedperlevel: 1.81
         }
-    }, 
+    },
     {
         version: '6.24.1',
         id: 'Blitzcrank',
@@ -1222,6 +1222,7 @@ const outputOrderDesc = [
             attackspeedperlevel: 2.18
         }
     }];
+const outputStats = [62.32, 53.384, 60.61];
 describe('lol', () => {
     it('deberia ser una objeto', () => {
         expect(typeof lol).toBe('object');
@@ -1243,6 +1244,14 @@ describe('lol', () => {
         });
         it('deberia retornar array campeones ordenador de forma descendente', () => {
             expect(window.lol.sortData(inputOrder2, sortByType, sortOrderDesc)).toEqual(outputOrderDesc);
+        });
+    });
+    describe(lol.computeStats, () => {
+        it('deberia de ser una funcion', () => {
+            expect(typeof window.lol.computeStats).toBe('function');
+        });
+        it('deberia retornar array con los datos del maximo,minimo y la media del daño de ataque de un campeon', () => {
+            expect(window.lol.computeStats(inputOrder)).toEqual(outputStats);
         });
     });
 });

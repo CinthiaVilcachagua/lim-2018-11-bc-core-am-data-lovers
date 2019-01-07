@@ -65,6 +65,11 @@ const filterOfRole = () => {
     else
         sortOrder = document.getElementById('r2').value;
     newArrayOfRole = lol.sortData(newArrayOfRole, sortBy, sortOrder);
+    // Mostrar estadistica
+    const statsResults = lol.computeStats(newArrayOfRole);
+    document.getElementById('idResultMax').innerHTML = statsResults[0];
+    document.getElementById('idResultMin').innerHTML = statsResults[1];
+    document.getElementById('idResultMedia').innerHTML = statsResults[2];
     // Creacion de template
     const containerTitle = document.getElementById('id-createTitleRole');
     const createTitle = `

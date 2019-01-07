@@ -186,6 +186,16 @@ body{
 	border: 1px solid #937341;
 	border-radius: 25px;
   }
+  .compute-stats{
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #937341;
+	border-radius: 25px; 
+  }
+  .statsTitle{
+	font-size: 12px;
+	display: inline-block;
+  }
 /* Modo responsive */
 @media only screen and (max-width: 767px){
 	.menu-icon{

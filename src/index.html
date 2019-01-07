@@ -57,14 +57,19 @@
                             </select>
                             <p>Por orden</p>
                             <div id="id-radioOrder" class="radio-Role">
-                                <input type="radio" id="r1" name="radio-name" value="1" checked>Asc<br>
-                                <input type="radio" id="r2" name="radio-name" value="-1">Desc<br>
+                                <label><input type="radio" id="r1" name="radio-name" value="1" checked>Asc<br></label>
+                                <label><input type="radio" id="r2" name="radio-name" value="-1">Desc<br></label>
+                            </div>
+                            <p>Estadistica de Roles</p>
+                            <div id="id-computeStats" class="compute-stats">
+                                <p class="statsTitle">Max. daño de ataque es = </p><p id = "idResultMax" class="statsTitle"></p><br>
+                                <p class="statsTitle">Min. daño de ataque es = </p><p id = "idResultMin" class="statsTitle"></p><br>
+                                <p class="statsTitle">Daño promedio = </p><p id = "idResultMedia" class="statsTitle"></p>
                             </div>
                         </div>
                     </div>
                 </div>
         </div>
-    
         <div id="id-containerRole" class="container-role">
                 <ul id="id-listRole" class="list-role"></ul>
         </div>

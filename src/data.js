@@ -17,7 +17,21 @@ const sortData = (data, sortBy, sortOrder) => {
     });
     return arrayOrder;
 };
+const computeStats = (data) => {
+    const arrayAttack = data.map((ataque) => {
+        return ataque.stats.attackdamage;
+    });
+    arrayAttack.sort((prmA, prmB) => prmA - prmB);
+    const max = Math.max(...arrayAttack);
+    const min = Math.min(...arrayAttack);
+    let indexRight = Math.floor((arrayAttack.length - 1) / 2);
+    let indexLeft = Math.ceil((arrayAttack.length - 1) / 2);
+    let median = Math.round(((arrayAttack[indexRight] + arrayAttack[indexLeft]) / 2) * 100) / 100;
+    const statsResults = [max, min, median];
+    return statsResults;
+};
 window.lol = {
     filterData,
     sortData,
+    computeStats,
 };
