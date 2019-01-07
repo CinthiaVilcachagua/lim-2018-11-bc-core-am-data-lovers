@@ -3,6 +3,8 @@ const menuShow = document.getElementById('id-menuShow');
 const mainBtn = document.getElementById('id-mainButton');
 const championsBtn = document.getElementById('id-championsButton');
 const filterBtn = document.getElementById('id-championsFilter');
+const inceptionBtn = document.getElementById('id-btnWelcome');
+
 // Cargar menú desplegable
 const loadMenu = () => {
     if (menuShow.className === 'show') {
@@ -19,8 +21,14 @@ const loadMain = () => {
     document.getElementById('id-mainFilter').style.display = 'none';
 };
 mainBtn.addEventListener('click', loadMain);
+const loadWelcome = () => {
+    document.getElementById('id-imgWelcome2').style.display = 'block';
+}
+inceptionBtn.addEventListener('click', loadWelcome);
+
 // Cargar campeones
 const loadChampions = () => {
+    document.getElementById('id-imgWelcome2').style.display = 'none';
     document.getElementById('id-createTitle').style.display = 'block';
     document.getElementById('id-containerChampions').style.display = 'block';
     document.getElementById('id-mainFilter').style.display = 'none';
@@ -49,6 +57,7 @@ const loadChampions = () => {
 championsBtn.addEventListener('click', loadChampions);
 // Filtrar por roles
 const filterOfRole = () => {
+    document.getElementById('id-imgWelcome2').style.display = 'none';
     document.getElementById('id-mainFilter').style.display = 'block';
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-containerChampions').style.display = 'none';

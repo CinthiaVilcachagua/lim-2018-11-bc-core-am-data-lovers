@@ -33,6 +33,9 @@ body{
 .img-logo{
 	background-image: url("../img/logo.png");
 }
+.img-welcome{
+	margin-top: 250px;
+}
 .menu-icon{
 	display: none;
 }
@@ -65,7 +68,6 @@ body{
 	box-sizing: border-box;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: green;
 }
 
 #video{
@@ -82,6 +84,9 @@ body{
 	width: 90%;
 	height: 600px;
 	margin: 20px auto;
+}
+.img-welcome2{
+	padding: 50px;
 }
 .container-auxiliary{
 	width: 90%;
@@ -114,6 +119,9 @@ body{
 	margin: 0px;
 }
 /* Diseño de contenedor de filtros */
+.main-condition{
+	display: none;
+}
 .container-filters{
 	width: 300px;
 	margin-right: auto;
@@ -198,6 +206,12 @@ body{
   }
 /* Modo responsive */
 @media only screen and (max-width: 767px){
+	.img-welcome2{
+		padding: 5px;
+		width: 340px; 
+		height: 200px;
+		margin-top: 50px;
+	}
 	.menu-icon{
 		background-image: url(../img/btn-menu.png);
 		background-repeat: no-repeat;
@@ -230,6 +244,9 @@ body{
 		.navigation ul li a:hover{
 			background: #4a4a4a
 		}
+	.img-welcome{
+		display: none;
+	}
 	.list-champions{
 		width: 30%;
 		margin-left: 40px;

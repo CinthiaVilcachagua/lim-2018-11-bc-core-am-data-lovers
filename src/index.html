@@ -10,14 +10,14 @@
     <!-- Creacion del encabezado fijo -->
     <header class="header">
         <div class="container logo-nav-container">
-            <a><img class="img-logo" src="../img/logo.png"></a>
+            <a href="#id-main"><img class="img-logo" src="../img/logo.png"></a>
             <span id="id-menuButton" class="menu-icon"></span>
             <nav class="navigation">
                 <ul id="id-menuShow">
                     <li><a href="#id-main" type="button" id="id-mainButton">INICIO</a></li>
                     <li><a href="#id-auxiliary" type="button" id="id-championsButton">CAMPEONES</a></li>
                     <li><a href="#id-auxiliary" type="button" id="id-championsFilter">FILTROS</a></li>
-                    <li><a href="#">CONTACTANOS</a></li>
+                    <li><a href="#">GRAFICOS</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,8 +29,13 @@
         </video>
     </main>
     <!-- Creacion de la presentacion -->
-    <div id="id-welcome" class="container-welcome"></div>
+    <div id="id-welcome" class="container-welcome">
+        <a href="#id-imgWelcome2"><img class="img-welcome" id = "id-btnWelcome" src="../img/btn-welcome.png"></a>
+    </div>
     <div id="id-auxiliary" class="container-auxiliary"></div>
+    <div id="id-imgWelcome2" class="img-welcome2">
+        <a href="#id-main"><img class="img-welcome2" src="../img/img-welcome.jpg"></a>
+    </div>
     <!-- Creacion de contenedor de campeones -->
     <div id="id-createTitle" class="create-Title"></div>
     <div id="id-containerChampions" class="container-champions">
@@ -60,7 +65,7 @@
                                 <label><input type="radio" id="r1" name="radio-name" value="1" checked>Asc<br></label>
                                 <label><input type="radio" id="r2" name="radio-name" value="-1">Desc<br></label>
                             </div>
-                            <p>Estadistica de Roles</p>
+                            <p>Estadistica generales por Rol</p>
                             <div id="id-computeStats" class="compute-stats">
                                 <p class="statsTitle">Max. daño de ataque es = </p><p id = "idResultMax" class="statsTitle"></p><br>
                                 <p class="statsTitle">Min. daño de ataque es = </p><p id = "idResultMin" class="statsTitle"></p><br>
