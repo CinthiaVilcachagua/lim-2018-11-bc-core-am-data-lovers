@@ -1,18 +1,4 @@
 # Data Lovers - LOL(League of Legends)
-
-## Índice
-
-* [Proyecto](#proyecto)
-* [Descripción del Juego](#Temática Elegida - LOL)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
-
 ***
 
 ## Proyecto
