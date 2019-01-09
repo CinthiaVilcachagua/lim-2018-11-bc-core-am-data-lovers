@@ -23,7 +23,7 @@ const loadMain = () => {
 mainBtn.addEventListener('click', loadMain);
 const loadWelcome = () => {
     document.getElementById('id-imgWelcome2').style.display = 'block';
-}
+};
 inceptionBtn.addEventListener('click', loadWelcome);
 
 // Cargar campeones
@@ -43,10 +43,17 @@ const loadChampions = () => {
         let listChampions = '';
         data.forEach((data) => {
             const cardChampions = `
-                <li class="list-champions">
+                <a class="list-champions" href="#${ data.id}">
                     <div class="champion-name">${ data.name}</div>
                     <div class="champion-img"><img class= "post-image" src="${ data.img}"/></div>
-                </li>
+                </a>
+                <div id="${ data.id}" class="modal-champions">
+                    <div class="container-modal" style="background-image: url('${ data.splash}');">
+                        <a href="#container-champions" class="btn-close">Close</a>
+                        <h1>${ data.name}</h1>
+                        <p class="description-champions">${ data.blurb}<p>
+                    </div>
+                </div>
           `;
             listChampions += cardChampions;
         });

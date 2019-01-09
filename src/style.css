@@ -33,9 +33,7 @@ body{
 .img-logo{
 	background-image: url("../img/logo.png");
 }
-.img-welcome{
-	margin-top: 250px;
-}
+
 .menu-icon{
 	display: none;
 }
@@ -59,7 +57,6 @@ body{
 .main{
 	padding-top: 100px;
 }
-
 .informative-content{
 	width: 1000px;
 	height: 400px;
@@ -78,6 +75,9 @@ body{
 	height: auto;
 	z-index: -10;
 	visibility: visible;
+}
+.img-welcome{
+	margin-top: 250px;
 }
 /* Diseño de presentacion de la pagina */
 .container-welcome{
@@ -160,6 +160,10 @@ body{
 	line-height: 20px;
 	text-align: center;
 	margin: 0px;
+	color: #000;
+}
+a.list-champions:link{
+	text-decoration:none; 
 }
 .champion-img{
 	height: 50px;
@@ -167,7 +171,61 @@ body{
   .post-image{
 	display: block;
 	margin: auto;
+	border-radius: 10px;
   }
+/* Diseño de modal */
+.modal-champions{
+	position: fixed;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	z-index: 999;
+  	opacity: 0;
+  	pointer-events: none;
+  	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.modal-champions:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modal-champions>.container-modal {
+	width: 654px;
+	height: 386px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	-webkit-box-shadow: 10px 10px 300px 151px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 300px 151px rgba(0,0,0,1);
+	box-shadow: 10px 10px 300px 151px rgba(0,0,0,1);
+	border-radius: 30px;
+	color: #937341;
+	font-size: 25px;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.btn-close {
+	color: #aaa;
+	line-height: 50px;
+	font-size: 80%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 70px;
+	text-decoration: none;	
+}
+.btn-close :hover {
+	color: #000;
+  }
+.description-champions{
+	color: beige;
+}
 /* Diseño del cuadro de filtros */
   .title-filters{
    background: #937341;
@@ -268,6 +326,13 @@ body{
 		margin: 20px auto ;
 		padding: 20px;
 	}
+	.modal-champions>.container-modal {
+		width: 280px;
+		height: 250px;
+		padding: 10px;
+		font-size: 13px;
+		background-size: cover;
+	}
 }
-/* Diseño de pie de pagina */
+
 
