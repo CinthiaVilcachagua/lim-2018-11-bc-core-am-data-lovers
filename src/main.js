@@ -18,7 +18,7 @@ menuBtn.addEventListener('click', loadMenu);
 const loadMain = () => {
     document.getElementById('id-auxiliary').style.display = 'none';
     document.getElementById('id-welcome').style.display = 'block';
-    document.getElementById('id-topChampions').style.display = 'block';
+    //document.getElementById('id-topChampions').style.display = 'block';
     document.getElementById('id-createTitle').style.display = 'none';
     document.getElementById('id-containerChampions').style.display = 'none';
     document.getElementById('id-mainFilter').style.display = 'none';
@@ -27,7 +27,7 @@ mainBtn.addEventListener('click', loadMain);
 //  Cargar Top de campeones
 const loadTopChampions = () => {
 };
-welcomeBtn.addEventListener('click', loadTopChampions); *
+welcomeBtn.addEventListener('click', loadTopChampions);
 // Cargar campeones
 const loadChampions = () => {
     document.getElementById('id-auxiliary').style.display = 'block';
@@ -35,7 +35,7 @@ const loadChampions = () => {
     document.getElementById('id-welcome').style.display = 'none';
     document.getElementById('id-containerChampions').style.display = 'block';
     document.getElementById('id-mainFilter').style.display = 'none';
-    document.getElementById('id-topChampions').style.display = 'none';
+    //document.getElementById('id-topChampions').style.display = 'none';
     const containerTitle = document.getElementById('id-createTitle');
     const createTitle = `
         <div class="Title">CAMPEONES</div>
@@ -69,7 +69,7 @@ championsBtn.addEventListener('click', loadChampions);
 // Filtrar por roles
 const filterOfRole = () => {
     document.getElementById('id-welcome').style.display = 'none';
-    document.getElementById('id-topChampions').style.display = 'none';
+    //document.getElementById('id-topChampions').style.display = 'none';
     document.getElementById('id-mainFilter').style.display = 'block';
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-containerChampions').style.display = 'none';
