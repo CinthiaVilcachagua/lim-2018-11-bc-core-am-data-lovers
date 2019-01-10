@@ -33,7 +33,6 @@ body{
 .img-logo{
 	background-image: url("../img/logo.png");
 }
-
 .menu-icon{
 	display: none;
 }
@@ -76,21 +75,38 @@ body{
 	z-index: -10;
 	visibility: visible;
 }
-.img-welcome{
-	margin-top: 250px;
-}
 /* Diseño de presentacion de la pagina */
 .container-welcome{
-	width: 90%;
-	height: 600px;
-	margin: 20px auto;
+	padding: 20px;
+	margin-top: 20px;
+	width: 35%;	
+	color: #937341;
+	font-size: 25px;
 }
-.img-welcome2{
-	padding: 50px;
+.text-welcome{
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.btn-welcome{
+	background-color:#D4AF37;
+	color: #000;
+	font-size: 18px;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	text-decoration:none;
 }
 .container-auxiliary{
 	width: 90%;
+	margin-top: 650px;
 	height: 100px;
+	display: none;
+}
+.top-champions{
+	width: 100%;
+	height: 100px;
+	background: blue;
+	margin-top: 100px;
 }
 /* Diseño de contenedor de campeones */
 .Title{
@@ -121,6 +137,7 @@ body{
 /* Diseño de contenedor de filtros */
 .main-condition{
 	display: none;
+	margin-top: 0px;
 }
 .container-filters{
 	width: 300px;
@@ -209,10 +226,11 @@ a.list-champions:link{
 	font-size: 25px;
 	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
+
 .btn-close {
 	color: #aaa;
 	line-height: 50px;
-	font-size: 80%;
+	font-size: 90%;
 	position: absolute;
 	right: 0;
 	text-align: center;
@@ -226,6 +244,34 @@ a.list-champions:link{
 .description-champions{
 	color: beige;
 }
+.modal-champions>.modal-filter {
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	background: green;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2em;
+	border-radius: 30px;
+	color: #937341;
+}
+.img-modal{
+	width: 400px;
+	height: 236px;
+	border-radius: 30px;
+}
+.container-canvas{
+	width: 400px;
+	height: 236px;
+	background: yellow;
+}
+.chart-champions{
+	width:"30";
+	height:"200";
+	background: purple;
+}
+
 /* Diseño del cuadro de filtros */
   .title-filters{
    background: #937341;
@@ -315,7 +361,8 @@ a.list-champions:link{
 		margin: 25px auto;
 	}
 	.container-auxiliary{
-		display: none;
+		margin-top: 0px;
+		height: 220px;
 	}
 	.container-filters{
 		max-width: 100%;
@@ -332,6 +379,19 @@ a.list-champions:link{
 		padding: 10px;
 		font-size: 13px;
 		background-size: cover;
+	}
+	.container-welcome{
+		padding: 5px;
+		margin-top: 200px;
+		width: 100%;	
+		color: #937341;
+		font-size: 15px;
+	}
+	.top-champions{
+		margin-top: 100px;
+		width: 100%;
+		height: 100px;
+		background: blue;
 	}
 }
 
