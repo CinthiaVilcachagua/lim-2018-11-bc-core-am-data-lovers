@@ -14,7 +14,7 @@ var dataLol = {
       splash:
       "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
       blurb:
-      "Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's ...",
+      "Aatrox es un guerrero legendario, uno de los cinco que quedan de una antigua raza conocida como el Darkin. Maneja su enorme espada con gracia y equilibrio, cortando legiones en un estilo que es hipnótico para la vista. Con cada enemigo derribado, los de Aatrox. ...",
       info: {
         attack: 8,
         defense: 4,
@@ -66,7 +66,7 @@ Ahri: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
   blurb:
-  "Unlike other foxes that roamed the woods of southern Ionia, Ahri had always felt a strange connection to the magical world around her; a connection that was somehow incomplete. Deep inside, she felt the skin she had been born into was an ill fit for ...",
+  "A diferencia de otros zorros que vagaban por los bosques del sur de Jonia, Ahri siempre había sentido una conexión extraña con el mundo mágico que la rodeaba; una conexión que de alguna manera estaba incompleta. En el fondo, sentía que la piel en la que había nacido era una mala forma para ella....",
   info: {
     attack: 3,
     defense: 4,
@@ -118,7 +118,7 @@ Akali: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
   blurb:
-  "There exists an ancient order originating in the Ionian Isles dedicated to the preservation of balance. Order, chaos, light, darkness -- all things must exist in perfect harmony for such is the way of the universe. This order is known as the Kinkou ...",
+  "Existe un antiguo orden originado en las Islas Jónicas dedicado a la preservación del equilibrio. Orden, caos, luz, oscuridad: todas las cosas deben existir en perfecta armonía, porque así es el camino del universo. Este orden es conocido como el Kinkou. ...",
   info: {
     attack: 5,
     defense: 3,
@@ -170,7 +170,7 @@ Alistar: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
   blurb:
-  "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of ...",
+  "Como el guerrero más poderoso que jamás haya emergido de las tribus Minotaur de la Gran Barrera, Alistar defendió a su tribu de los muchos peligros de Valoran; Es decir, hasta la llegada del ejército noxiano. Alistar fue atraído de su aldea por las maquinaciones...",
   info: {
     attack: 6,
     defense: 9,
@@ -222,7 +222,7 @@ Amumu: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
   blurb:
-  "''Solitude can be lonelier than death.''<br><br>A lonely and melancholy soul from ancient Shurima, Amumu roams the world in search of a friend. Cursed by an ancient spell, he is doomed to remain alone forever, as his touch is death and his affection ...",
+  "''La soledad puede ser más solitaria que la muerte. '' <br> <br> Amumu, alma solitaria y melancólica de la antigua Shurima, recorre el mundo en busca de un amigo. Maldecido por un antiguo hechizo, está condenado a permanecer solo para siempre, ya que su toque es la muerte y su afecto. ...",
   info: {
     attack: 2,
     defense: 6,
@@ -274,7 +274,7 @@ Anivia: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
   blurb:
-  "Anivia is a being of the coldest winter, a mystical embodiment of ice magic, and an ancient protector of the Freljord. She commands all the power and fury of the land itself, calling the snow and bitter wind to defend her home from those who would ...",
+  "Anivia es un ser del invierno más frío, una encarnación mística de la magia de hielo y un antiguo protector del Freljord. Ella ordena todo el poder y la furia de la tierra misma, llamando a la nieve y al viento amargo para defender su hogar de aquellos que lo harían. ...",
   info: {
     attack: 1,
     defense: 4,
@@ -326,7 +326,7 @@ Annie: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
   blurb:
-  "There have always been those within Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion, and a crackdown on any form of ...",
+  "Siempre ha habido personas dentro de Noxus que no estuvieron de acuerdo con los males perpetrados por el Alto Mando de Noxian. El Alto Mando acababa de sofocar un intento de golpe de Estado del autoproclamado Príncipe Heredero Raschallion, y una ofensiva contra cualquier forma de ...",
   info: {
     attack: 2,
     defense: 3,
@@ -378,7 +378,7 @@ Ashe: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
   blurb:
-  "With each arrow she fires from her ancient ice-enchanted bow, Ashe proves she is a master archer. She chooses each target carefully, waits for the right moment, and then strikes with power and precision. It is with this same vision and focus that she ...",
+  "Con cada flecha que dispara desde su antiguo arco encantado de hielo, Ashe demuestra que es una maestra arquera. Ella elige cada objetivo con cuidado, espera el momento adecuado y luego ataca con poder y precisión. Es con esta misma visión y enfoque que ella ...",
   info: {
     attack: 7,
     defense: 3,
@@ -430,7 +430,7 @@ AurelionSol: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
   blurb:
-  "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his ...",
+  "Aurelion Sol una vez adornó el vasto vacío del cosmos con maravillas celestiales de su propia invención. Ahora, se ve obligado a ejercer su asombroso poder a instancias de un imperio que viaja por el espacio que lo engañó hasta convertirse en servidumbre. Deseando un regreso a su ...",
   info: {
     attack: 2,
     defense: 3,
@@ -482,7 +482,7 @@ Azir: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
   blurb:
-  "''Shurima was once the glory of Runeterra. I will make it so again.''<br><br>Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his ...",
+  "''Shurima fue una vez la gloria de Runeterra. Lo volveré a hacer. '' <br> <br> Azir fue un emperador mortal de Shurima en una época muy lejana, un hombre orgulloso que se encontraba en la cúspide de la inmortalidad. Su arrogancia lo vio traicionado y asesinado en el momento de su ...",
   info: {
     attack: 6,
     defense: 3,
@@ -534,7 +534,7 @@ Bard: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
   blurb:
-  "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran's greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of ...",
+  "Bard viaja a través de reinos más allá de la imaginación de los seres mortales. Algunos de los más grandes eruditos de Valoran han pasado sus vidas tratando de entender los misterios que él encarna. Este espíritu enigmático ha recibido muchos nombres a lo largo de la historia de ...",
   info: {
     attack: 4,
     defense: 4,
@@ -586,7 +586,7 @@ Blitzcrank: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcranck_0.jpg",
   blurb:
-  "Zaun is a place where both magic and science have gone awry, and the unchecked nature of experimentation has taken its toll. However, Zaun's lenient restrictions allow their researchers and inventors the leeway to push the bounds of science at an ...",
+  "Zaun es un lugar donde tanto la magia como la ciencia han salido mal, y la naturaleza sin control de la experimentación ha tenido su efecto. Sin embargo, las restricciones indulgentes de Zaun permiten a sus investigadores e inventores el margen de maniobra para empujar los límites de la ciencia en una ...",
   info: {
     attack: 4,
     defense: 8,
@@ -638,7 +638,7 @@ Brand: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
   blurb:
-  "In a faraway place known as Lokfar there was a seafaring marauder called Kegan Rodhe. As was his people's way, Kegan sailed far and wide with his fellows, stealing treasures from those unlucky enough to catch their attention. To some, he was a ...",
+  "En un lugar lejano conocido como Lokfar había un marauder llamado Kegan Rodhe. Como era el camino de su gente, Kegan navegó lejos con sus compañeros, robando tesoros de aquellos que tuvieron la mala suerte de llamar su atención. Para algunos, él era un ...",
   info: {
     attack: 2,
     defense: 2,
@@ -690,7 +690,7 @@ Braum: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
   blurb:
-  "''Would you like a bedtime story?''<br><br>''Grandma, I'm too old for that.''<br><br>''You're never too old to be told a story.''<br><br>The girl reluctantly crawls into bed and waits, knowing she won't win this battle. A bitter wind howls outside, ...",
+  "''¿Te gustaría un cuento para dormir? '' <br> <br> '' Abuela, soy demasiado mayor para eso '' <br> <br> '' Nunca eres demasiado viejo para que te cuenten una historia '. '<br> <br> La niña se arrastra de mala gana en la cama y espera, sabiendo que no ganará esta batalla. Un viento amargo aulla afuera. ...",
   info: {
     attack: 3,
     defense: 9,
@@ -742,7 +742,7 @@ Caitlyn: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
   blurb:
-  "''Go ahead, run. I'll give you a five minute head start.''<br><br>One of the reasons Piltover is known as the City of Progress is because it has an extraordinarily low crime rate. This hasn't always been the case; brigands and thieves of all sorts ...",
+  "''Adelante, corre. Le daré una ventaja de cinco minutos. '' <br> <br> Una de las razones por las que Piltover se conoce como la Ciudad del Progreso es porque tiene una tasa de criminalidad extraordinariamente baja. Esto no siempre ha sido el caso; Brigadas y ladrones de todo tipo. ...",
   info: {
     attack: 8,
     defense: 2,
@@ -794,7 +794,7 @@ Camille: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
   blurb:
-  "Weaponized to execute outside the boundaries of the law, Camille Ferros is an elegant and elite operative who ensures the commerce of the Piltover machine with its Zaunite underbelly runs smoothly. Raised among manners and money, she is the Principal ...",
+  "Armada para ejecutar fuera de los límites de la ley, Camille Ferros es una operadora elegante y de élite que garantiza el comercio de la máquina Piltover con su bajo vientre Zaunite que funciona sin problemas. Criada entre modales y dinero, ella es la directora...",
   info: {
     attack: 8,
     defense: 6,
@@ -846,7 +846,7 @@ Cassiopeia: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
   blurb:
-  "Cassiopeia is a terrifying creature - half woman, half snake - whose slightest glance brings death. The youngest daughter of one of Noxus' most influential families, she was once a beautiful and cunning temptress capable of manipulating the hardest ...",
+  "Cassiopeia es una criatura aterradora, mitad mujer, mitad serpiente, cuya mirada más leve produce la muerte. La hija menor de una de las familias más influyentes de Noxus, una vez fue una bella y astuta tentadora capaz de manipular a los más duros. ...",
   info: {
     attack: 2,
     defense: 3,
@@ -898,7 +898,7 @@ Chogath: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
   blurb:
-  "There is a place between dimensions, between worlds. To some it is known as the Outside, to others it is the Unknown. To those that truly know, however, it is called the Void. Despite its name, the Void is not an empty place, but rather the home of ...",
+  "Hay un lugar entre las dimensiones, entre los mundos. Para algunos se le conoce como el Exterior, para otros es lo Desconocido. Para aquellos que realmente saben, sin embargo, se llama el vacío. A pesar de su nombre, el Vacío no es un lugar vacío, sino el hogar de ...",
   info: {
     attack: 3,
     defense: 7,
@@ -950,7 +950,7 @@ Corki: {
   splash:
   "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
   blurb:
-  "When Heimerdinger and his yordle colleagues migrated to Piltover, they embraced science as a way of life, and they immediately made several groundbreaking contributions to the techmaturgical community. What yordles lack in stature, they make up for ...",
+  "Cuando Heimerdinger y sus colegas de Yordle emigraron a Piltover, abrazaron la ciencia como una forma de vida e inmediatamente hicieron varias contribuciones innovadoras a la comunidad tecnológicamente quirúrgica. Lo que a Yordle le falta en estatura, lo compensan ...",
   info: {
     attack: 8,
     defense: 3,

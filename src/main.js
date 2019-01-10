@@ -27,7 +27,7 @@ mainBtn.addEventListener('click', loadMain);
 //  Cargar Top de campeones
 const loadTopChampions = () => {
 };
-welcomeBtn.addEventListener('click', loadTopChampions);
+welcomeBtn.addEventListener('click', loadTopChampions); *
 // Cargar campeones
 const loadChampions = () => {
     document.getElementById('id-auxiliary').style.display = 'block';

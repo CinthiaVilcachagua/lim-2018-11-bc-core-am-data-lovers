@@ -8,7 +8,8 @@
 * [Objetivos](#objetivos-del-usuario)
 * [Historias de Usuario](#historias-de-usuario)
 * [Uso del producto](#¿Cuándo-se-utilizaría-el-producto?)
-* [La Solución](#solución-al-problema)
+* [La Solución a sus necesidades](#solución-al-problema)
+* [Desarrolo del Proyecto](#desarrollo-del-proyecto)
 
 
 ## Proyecto
@@ -19,7 +20,7 @@ Además, este proyecto se debe "resolver" en parejas, por lo que un objetivo imp
 
 ## Temática Elegida
 
-[League of Legends] (https://lan.leagueoflegends.com/es/game-info/get-started/what-is-lol/) (también conocido por sus siglas LoL) es un videojuego del juego de género multiplayer online battle arena (MOBA) y deporte electrónico desarrollado por Riot Games para Microsoft Windows y OS X.
+[League of Legends](https://lan.leagueoflegends.com/es/game-info/get-started/what-is-lol/) (también conocido por sus siglas LoL) es un videojuego del juego de género multiplayer online battle arena (MOBA) y deporte electrónico desarrollado por Riot Games para Microsoft Windows y OS X.
 
 Fue diseñado para el sistema operativo Microsoft Windows y lanzaron una beta para OS X dejando al poco tiempo el proyecto de lado. Esta beta ha sido mejorada por parte de usuarios del juego, haciendo posible jugar a una versión actualizada de League of Legends.
 
@@ -54,7 +55,9 @@ Algunas de las preguntas generales que hicimos:
 ### Historias de Usuario generadas
 
 * 	Como jugador de LOL me gustaría saber quiénes son los campeones por medio de una imagen y ordenadamente para poder reconocerlos.
+
 * 	Como jugador de LOL me gustaría poder filtrar los campeones por Rol, para conocer sus habilidades.
+
 * 	Como jugador de LOL me gustaría tener una estadística adicional sobre los ataques.
 
 * 	Como jugador de LOL me gustaría ver las características de los campeones, para así poder conocer quién es el mejor según sus puntajes
@@ -63,15 +66,17 @@ Algunas de las preguntas generales que hicimos:
 
 El producto lo pueden usar tanto como novatos desde un inicio o jugadores antiguos que ya conocen mas de la plataforma, para que así viendo las datas de los campeones puedan elegir el de su mayor conveniencia para un juego más atractivo.
 
-## Solución al problema
+## Solución al problema y necesidades del Usuario
 
-Después de conocer a los principales usuarios y entender sus necesidades, se llegó a la decisión de construir una interfaz web que permita visualizar y manipular data, de esta manera resolvería en gran manera el problema del usuario
+Después de conocer a los principales usuarios y entender sus necesidades, se llegó a la decisión de construir una interfaz web que permita visualizar y manipular data,aplicando asi todas las historias de usuario que logramos recopilar gracias a los testeos y encuestas; de esta manera se resolvería en gran manera las necesidades del usuario.
+
+## Desarrollo del Proyecto
 
 ### *PRIMER SPRINT*
 
 1) Tareas compartidas y organización mediante Trello.
 
-<img src= "simg/Trello.png" alt="Imagen de la organización" style="max-width:80%">
+<img src= "img/Trello.png" alt="Imagen de la organización" style="max-width:80%">
 
 2) Sketch de la solución (prototipo de baja fidelidad).
 
@@ -79,6 +84,7 @@ Después de conocer a los principales usuarios y entender sus necesidades, se ll
 
 
 3) Resultados del primer Sprint
+
 -Barra de Menú integrada.
 -Fondo de pantalla (video interactivo).
 -Manejo pequeño de Responsive.
@@ -86,8 +92,11 @@ Después de conocer a los principales usuarios y entender sus necesidades, se ll
 <img src= "img/Semana1.png" alt="Imagen del resultado 1semana" style="max-width:80%">
 
 #### Testeos de usabilidad
+
 - Al usuario le gusto mucho el fondo en movimiento, pero le gustaria que los campeones se muestren mas ordenados.
+
 - Al usuario le encantaria que tenga una mejor visibilidad en cualquiera de sus dispositivos.
+
 - Al usurario le gustaria ver el menu con letra mas grande.
 
 ### *SEGUNDO SPRINT*
@@ -99,8 +108,11 @@ Trabajamos un segundo prototipado de baja fidelidad.
 <img src= "img/Semana2.png" alt="Imagen del resultado final" style="max-width:80%">
 
 #### Testeos de usabilidad
+
 - Al usuario le gusto la manera ordenada en que se muestra a los campeones y la fácil visibilidad. Le gustaria si se pudiese mostrar un poquito mas grande y su nombre también mas grande.
+
 - Al usuario le gustaria poder observar más caractarísticas de su campeon favorito.
+
 - Al usuario le gustaria poder clasificar a sus campeones.
 
 ### *TERCER SPRINT*
@@ -108,14 +120,28 @@ Trabajamos un segundo prototipado de baja fidelidad.
 Trabajamos la segunda historia de Usuario: Yo como usuario quiero poder filtrar a los campeones según su Rol (ordenándolos según orden ascendente y descendente).
 Se trabajó en una estadística de ataque según el grupo de campeones por Rol. (promedios).
 
-<img src= "img/Semana3.png" alt="Imagen del resultado final" style="max-width:80%">
+1) Sketch del tercer sprint (prototipo de alta fidelidad).
+
+Luego de los testeos de usabilidad, decidimos tratar de implementar algunas de las recoemndaciones y realizar un nuevo prototipado usando el figma - [INGRESA AQUI](https://www.figma.com/proto/H0kSz5zHLpT4zNCKe78ca18g/LOL?node-id=16%3A498&viewport=-356%2C1026%2C0.44939&scaling=min-zoom).
+
+Implementamos el Zeplin - [INGRESA AQUÍ](https://app.zeplin.io/project/5c33eafa7fe57c0c905da306)
+
+
+2)Resultado del tercer sprint
+
+<img src= "img/Semana3.png" alt="Imágen del resultado final" style="max-width:80%">
+
+INCORPORAMOS UN MODAL POR CADA CAMPEON CON UNA BREVE DESCRIPCIÓN.
+<img src= "img/ultimoSprint.png" alt="Imaáen del modal" style="max-width:80%">
 
 #### Testeos de usabilidad
-- Al usuario le gusto mucho poder filtrar a sus campeones segun sus roles y la manera ordenada en la que se presentaba.
+
+- Al usuario le gusto mucho poder filtrar a sus campeones según sus roles y la manera ordenada en la que se presentaba.
+
 - Al usuario le gusto mucho poder ver la estadística de los ataques según rol, pero le gustaría saber el ataque de cada uno.
-- Al usuario le gustaria poder observar un top de los que tiene mas dificultad y ataque.
+
 
 ### COLABORADORAS:
 
-1.	Giuliana Mendoza Suma.
-2.	Cinthia Vilcachagua Ccorimanya.
+1.	[Giuliana Mendoza Suma](https://github.com/GiulianaMS).
+2.	[Cinthia Vilcachagua Ccorimanya](https://github.com/CinthiaVilcachagua).
