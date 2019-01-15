@@ -10,9 +10,9 @@
   <body id="id-body">
     <!-- Creacion del encabezado fijo -->
     <header class="header">
-        <div class="container logo-nav-container">
-            <a href="#id-main"><img class="img-logo" src="../img/logo.png"></a>
-            <span id="id-menuButton" class="menu-icon"></span>
+        <div class="container logo_nav_container">
+            <img class="img_logo" src="../img/logo.png" alt="logo de lol">
+            <span id="id-menuButton" class="menu_icon"></span>
             <nav class="navigation">
                 <ul id="id-menuShow">
                     <li><a href="#id-main" type="button" id="id-mainButton">INICIO</a></li>
@@ -21,32 +21,30 @@
                 </ul>
             </nav>
         </div>
-        <!-- Creacion del fondo de pantalla -->
+        <!-- Creacion de pantalla inicial-->
     </header>
-    <main id="id-main" class="main">
+    <div id="id-main" class="main">
         <video id ="video" loop autoplay preload muted>
                 <source src="../img/neko.webm" type="video/webm" ; codecs="vp8,vorbis">
         </video>
-    </main>
+    </div>
     <!-- Creacion de la presentacion -->
     <div id="id-welcome" class="container-welcome">
         <h1 class="text-welcome">Esto no es una simple masacre esto es mi obra maestra.</h1>
-        <h3 class="text-welcome">Conoce más sobre LOL</h3>
-        <a href="#id-topChampions" id="id-welcomeButton" class="btn-welcome" type="button" >INFORMATE AQUI</a>
+        <a href="#id-topChampions" id="id-welcomeButton" class="btn-welcome" type="button" >CONOCE A TUS CAMPEONES</a>
     </div>
+    <!-- Contenedor de top de campeones (nueva historia de usuario) -->
     <div id="id-auxiliary" class="container-auxiliary"></div>
-    <!--  borras este comenteario cuando termines aca estara tu contenedo de top de campeones
-    <div id="id-topChampions" class="top-champions">hola como estas
-    </div> -->
-    <!-- Creacion de contenedor de campeones -->
-    <div id="id-createTitle" class="create-Title"></div>
-    <div id="id-containerChampions" class="container-champions">
-        <ul id="id-containerList" class="container-list"></ul>
-    </div>
+
+    <main>
+      <div id="id-createTitle" class="create-Title"></div>
+      <div id="id-containerChampions" class="container-champions">
+          <ul id="id-containerList" class="container-list"></ul>
+      </div>
     <!-- Creacion de filtros -->
-    <div id="id-mainFilter" class="main-condition">
-        <div id="id-createTitleRole" class="create-Title"></div>
-        <div id = "id-containerFilters" class="container-filters">
+      <div id="id-mainFilter" class="main-condition">
+          <div id="id-createTitleRole" class="create-Title"></div>
+          <form id = "id-containerFilters" class="container-filters">
                 <div class="wrapper-filters">
                     <div class="title-filters">
                         <h3>FILTROS CAMPEONES</h3>
@@ -59,7 +57,7 @@
                                 <option value="Fighter" selected="selected">Luchadores</option>
                                 <option value="Mage">Magos</option>
                                 <option value="Marksman">Tiradores</option>
-                                <option value="Support">Apoyos</option>
+                                <option value="Support">Soporte</option>
                                 <option value="Tank">Tanques</option>
                             </select>
                             <p>Por orden</p>
@@ -67,20 +65,21 @@
                                 <label><input type="radio" id="r1" name="radio-name" value="1" checked>Asc<br></label>
                                 <label><input type="radio" id="r2" name="radio-name" value="-1">Desc<br></label>
                             </div>
-                            <p>Estadistica generales por Rol</p>
+                            <p>Estadistica de ataque por Rol</p>
                             <div id="id-computeStats" class="compute-stats">
-                                <p class="statsTitle">Max. daño de ataque es = </p><p id = "idResultMax" class="statsTitle"></p><br>
-                                <p class="statsTitle">Min. daño de ataque es = </p><p id = "idResultMin" class="statsTitle"></p><br>
+                                <p class="statsTitle">Max. daño de ataque es = </p><p id = "idResultMax" class="statsTitle"> </p><br>
+                                <p class="statsTitle">Min. daño de ataque es = </p><p id = "idResultMin" class="statsTitle"> </p><br>
                                 <p class="statsTitle">Daño promedio = </p><p id = "idResultMedia" class="statsTitle"></p>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        <div id="id-containerRole" class="container-role">
+            </form>
+            <div id="id-containerRole" class="container-role">
                 <ul id="id-listRole" class="list-role"></ul>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>

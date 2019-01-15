@@ -17,23 +17,23 @@ body{
 	position: fixed;
 	left: 0;
 	top:0;
-	right: 0;	
+	right: 0;
 }
 	.header a{
 		color: #937341;
 		text-decoration: none;
 		font-weight: bold;
 	}
-.logo-nav-container{
+.logo_nav_container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
-.img-logo{
+.img_logo{
 	background-image: url("../img/logo.png");
 }
-.menu-icon{
+.menu_icon{
 	display: none;
 }
 .navigation ul{
@@ -43,7 +43,7 @@ body{
 }
 	.navigation ul li{
 		display: inline-block;
-	}	
+	}
 		.navigation ul li a{
 			display: block;
 			padding: 0.5rem 1rem;
@@ -79,7 +79,7 @@ body{
 .container-welcome{
 	padding: 20px;
 	margin-top: 20px;
-	width: 35%;	
+	width: 35%;
 	color: #937341;
 	font-size: 25px;
 }
@@ -97,8 +97,7 @@ body{
 	text-decoration:none;
 }
 .container-auxiliary{
-	width: 90%;
-	margin-top: 650px;
+
 	height: 100px;
 	display: none;
 }
@@ -180,7 +179,7 @@ body{
 	color: #000;
 }
 a.list-champions:link{
-	text-decoration:none; 
+	text-decoration:none;
 }
 .champion-img{
 	height: 50px;
@@ -236,7 +235,7 @@ a.list-champions:link{
 	text-align: center;
 	top: 0;
 	width: 70px;
-	text-decoration: none;	
+	text-decoration: none;
 }
 .btn-close :hover {
 	color: #000;
@@ -302,7 +301,7 @@ a.list-champions:link{
 	width: 90%;
 	padding: 10px;
 	border: 1px solid #937341;
-	border-radius: 25px; 
+	border-radius: 25px;
   }
   .statsTitle{
 	font-size: 12px;
@@ -312,7 +311,7 @@ a.list-champions:link{
 @media only screen and (max-width: 767px){
 	.img-welcome2{
 		padding: 5px;
-		width: 340px; 
+		width: 340px;
 		height: 200px;
 		margin-top: 50px;
 	}
@@ -328,7 +327,7 @@ a.list-champions:link{
 	}
 	.navigation ul{
 		display: none;
-		
+
 	}
 	.navigation ul.show{
 		display: block;
@@ -337,8 +336,8 @@ a.list-champions:link{
 	.navigation ul li{
 		display: block;
 		margin-top: 1rem;
-		
-	}	
+
+	}
 		.navigation ul li a{
 			display: block;
 			padding: 0.5rem 0;
@@ -383,7 +382,7 @@ a.list-champions:link{
 	.container-welcome{
 		padding: 5px;
 		margin-top: 200px;
-		width: 100%;	
+		width: 100%;
 		color: #937341;
 		font-size: 15px;
 	}
@@ -394,5 +393,3 @@ a.list-champions:link{
 		background: blue;
 	}
 }
-
-

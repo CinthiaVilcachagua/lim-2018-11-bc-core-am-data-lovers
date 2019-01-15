@@ -16,6 +16,7 @@ const loadMenu = () => {
 menuBtn.addEventListener('click', loadMenu);
 // Cargar Inicio
 const loadMain = () => {
+    document.getElementById('id-main').style.display = 'block'
     document.getElementById('id-auxiliary').style.display = 'none';
     document.getElementById('id-welcome').style.display = 'block';
     //document.getElementById('id-topChampions').style.display = 'block';
@@ -25,11 +26,10 @@ const loadMain = () => {
 };
 mainBtn.addEventListener('click', loadMain);
 //  Cargar Top de campeones
-const loadTopChampions = () => {
-};
-welcomeBtn.addEventListener('click', loadTopChampions);
+
 // Cargar campeones
 const loadChampions = () => {
+    document.getElementById('id-main').style.display = 'none'
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-createTitle').style.display = 'block';
     document.getElementById('id-welcome').style.display = 'none';
@@ -66,10 +66,12 @@ const loadChampions = () => {
     createTemplate(data);
 };
 championsBtn.addEventListener('click', loadChampions);
+
+welcomeBtn.addEventListener('click', loadChampions);
 // Filtrar por roles
 const filterOfRole = () => {
     document.getElementById('id-welcome').style.display = 'none';
-    //document.getElementById('id-topChampions').style.display = 'none';
+      document.getElementById('id-main').style.display = 'none'
     document.getElementById('id-mainFilter').style.display = 'block';
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-containerChampions').style.display = 'none';
@@ -106,11 +108,11 @@ const filterOfRole = () => {
                     <div class="champion-name">${ newArrayOfRole.name}</div>
                     <div class="champion-img"><img class= "post-image" src="${ newArrayOfRole.img}"/></div>
                 </a>
-                <div id="${ newArrayOfRole.key}" class="modal-champions">
-                    <div class="modal-filter">
+                <div id="${ data.id}" class="modal-champions">
+                    <div class="container-modal" style="background-image: url('${ data.splash}');">
                         <a href="#container-champions" class="btn-close">Close</a>
-                        <div class="img-modalChampions" ><img class="img-modal" src="${ newArrayOfRole.splash}"/></div>
-                        <div class="container-canvas"><canvas id="id-chartChampions" class="chart-champions"></canvas></div>
+                        <h1>${ data.name}</h1>
+                        <p class="description-champions">${ data.blurb}<p>
                     </div>
                 </div>
           `;
