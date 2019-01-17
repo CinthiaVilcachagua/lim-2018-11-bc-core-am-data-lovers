@@ -4,7 +4,7 @@ const mainBtn = document.getElementById('id-mainButton');
 const championsBtn = document.getElementById('id-championsButton');
 const filterBtn = document.getElementById('id-championsFilter');
 const welcomeBtn = document.getElementById('id-welcomeButton');
-
+document.getElementById('contenedor_top').style.display = 'none';
 // Cargar menú desplegable
 const loadMenu = () => {
     if (menuShow.className === 'show') {
@@ -25,11 +25,58 @@ const loadMain = () => {
     document.getElementById('id-mainFilter').style.display = 'none';
 };
 mainBtn.addEventListener('click', loadMain);
-//  Cargar Top de campeones
+  //  Cargar Top de campeones
+  const topChampions = () => {
 
+    document.getElementById('id-main').style.display = 'none';
+  document.getElementById('id-welcome').style.display = 'none';
+  document.getElementById('id-auxiliary').style.display = 'block';
+  document.getElementById('contenedor_top').style.display = 'block';
+ document.getElementById('id-mainFilter').style.display = 'none';
+
+    let campeones = Object.values(dataLol.data);
+  //Quiero filtrar por dificultad
+  let dificultCampeon = [];
+  for (let i = 0; i < campeones.length; i++) {
+    dificultCampeon.push(campeones[i]);
+  }
+
+  dificultCampeon.sort((ab, cd) => {
+    return cd.info.difficulty - ab.info.difficulty;
+  }
+  );
+  let newArray = [];
+    for (var i = 0; i < 10; i++) {
+      newArray.push(dificultCampeon[i]);
+    }
+
+    // insertando las imagenes y nombres
+    const containerList = document.getElementById('id-topList');
+      const createTemplate = (data) => {
+        let listChampions = '';
+        data.forEach((newArray) => {
+            const cardChampions = `
+                <div class="contenedor-topchampion">
+                   <div class="champion-card">
+                      <img class="imagen_Campeon" src="${ newArray.splash}" width="290"/>
+                      <h5 class="campeon-name">${ newArray.name}</h5>
+                      <p class="champion-title" id="titulo">${newArray.title}</p>
+                      <p class="champion-tags">Tipo: ${newArray.tags}<p>
+                     </div>
+                  </div>
+              `;
+                listChampions += cardChampions;
+            });
+            containerList.innerHTML = listChampions;
+        };
+        createTemplate(newArray);
+  };
+  welcomeBtn.addEventListener('click', topChampions);
 // Cargar campeones
 const loadChampions = () => {
+
     document.getElementById('id-main').style.display = 'none'
+    document.getElementById('contenedor_top').style.display = 'none';
     document.getElementById('id-auxiliary').style.display = 'block';
     document.getElementById('id-createTitle').style.display = 'block';
     document.getElementById('id-welcome').style.display = 'none';
@@ -67,7 +114,7 @@ const loadChampions = () => {
 };
 championsBtn.addEventListener('click', loadChampions);
 
-welcomeBtn.addEventListener('click', loadChampions);
+
 // Filtrar por roles
 const filterOfRole = () => {
     document.getElementById('id-welcome').style.display = 'none';
@@ -115,7 +162,13 @@ const filterOfRole = () => {
                         <p class="description-champions">${ data.blurb}<p>
                     </div>
                 </div>
-          `;
+          ` /* <div id="${ newArrayOfRole.key}" class="modal-champions">
+                    <div class="modal-filter">
+                        <a href="#container-champions" class="btn-close">Close</a>
+                        <div class="img-modalChampions" ><img class="img-modal" src="${ newArrayOfRole.splash}"/></div>
+                        <div class="container-canvas"><canvas id="id-chartChampions" class="chart-champions"></canvas></div>
+                    </div>
+                </div>  */;
             listChampions += cardChampions;
         });
         containerList.innerHTML = listChampions;
